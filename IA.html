@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilosIA.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>Revista UCB</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sabores" onclick="seleccionar()">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <span>Desarrollo Web</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="IA.html" onclick="seleccionar()">
+                                <i class="fa-solid fa-code-branch"></i>
+                                <span>Inteligencia Artificial</span>
+                            </a></li>
+                        <li>
+                            <a href="#blog" onclick="seleccionar()">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Gestión Tecnologica</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <br>
+    <center><h1>Noticias del dia de Hoy</h1></center>
+    <br>
+    <div class = "ListCard">
+      
+        <div class="card" style="width: 18rem;">
+            <img src="img/ia4.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chat GPT</h5>
+              <p class="card-text">El problema de la IA es que trata de resolver cuestiones sobre la sociedad que deberíamos afrontar de otra forma</p>
+              <a href="#" class="btn btn-primary" onclick="mostrarNoticia(this)">Ver Informacion</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/ia3.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">IA suena a rebuzno</h5>
+              <p class="card-text">Es comprensible que la velocidad de la tecnología asuste, y que se pida su fiscalización. Incluso que se exagere con ella</p>
+              <a href="#" class="btn btn-primary" onclick="">Ver Informacion</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/ia2.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">La Inteligencia artificial ya supera a los humanos en los diagnosticos cardiaco</h5>
+              <p class="card-text">Un ensayo muestra que los cardiólogos no distinguieron qué evaluaciones habían sido hechas por máquinas y les encontraron menos errores que a los humanos</p>
+              <a href="#" class="btn btn-primary" onclick="">Ver Informacion</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            
+            <div class="card-body">
+              <img src="img/ia1.avif" class="card-img-top" alt="...">
+              <h5 class="card-title">Asi perdio un trabajo de locutor por una IA</h5>
+              <p class="card-text">Alejandro Graue es un actor de doblaje a quien sustituyeron en uno de sus proyectos por una voz hecha por ordenador. El problema no es ese, dice, sino la tendencia que viene.</p>
+              <button href="#" class="btn btn-primary" id="btnAbrirNoticia">Leer mas</button>
+            </div>
+          </div>
+    </div>
+    <br>
+    <div class="notice" >
+        <div class="card-notice mb-3" id="noticia-completa">
+            <span id="btnCerrarNoticia" class="cerrar">&times;</span>
+            <img src="img/ia1.avif" class="card-img-top" alt="...">
+            <div class="card-body" id="noti1">
+              <h5 class="card-title">Asi perdio un trabajo de locutor por una IA</h5>
+              <p class="card-text-notice">“Llegó el día: me reemplazaron en un trabajo con voz generada por inteligencia artificial”, escribió en Twitter Alejandro Graue, locutor y actor de doblaje argentino de 36 años. Llevaba un par de meses doblando al español un célebre canal de YouTube con millones de suscriptores en inglés, del que prefiere no dar el nombre: “El autor es un muchacho histriónico, con algunos modismos muy instalados, a veces tartamudeos, que se frena en mitad de una frase y comienza otra. Es algo que requiere de técnica de actuación, para poder representarlo lo mejor posible”, explica por videollamada a EL PAÍS.
+
+                Jeremy Renner reveló que escribió sus “últimas palabras” para su familia en el hospital tras el accidente
+                
+                En enero vio que el canal se seguía actualizando con vudeos que él no había doblado: “Cuando le di al play se escuchaba una voz totalmente falta de sentimiento que decía: Hola, bienvenidos nuevamente a este programa, hoy estaremos.... Algo horrible”, recuerda. En los comentarios la gente se quejaba del cambio, pero de momento los videos han seguido apareciendo con esa voz artificial, que es incapaz de reproducir el particular modo de hablar del youtuber.
+                
+                Entonces puso el tuit, que ya han visto más de 740.000 personas. El problema para Graue no es ese trabajo que ha perdido. Él es un profesional independiente y tiene otros, de momento. El problema es la tendencia: “Es preocupante. Vamos camino de que el factor humano desaparezca de algo artístico”, dice.
+
+              </p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card-notice mb-3" id="noticia-completa">
+            <img src="img/ia2.avif" class="card-img-top" alt="...">
+            <div class="card-body" id="noti2">
+              <h5 class="card-title">La inteligencia artificial ya supera a los humanos en el análisis de ecografías de diagnóstico cardiaco</h5>
+              <p class="card-text-notice">
+                Además de responder a todo tipo de preguntas o generar imágenes que jamás existieron, la inteligencia artificial (IA) también toma relevancia en su aplicación a la medicina. Hoy, la revista Nature publica un estudio en el que la IA mejora los resultados de los humanos en la evaluación de ecocardiogramas, un tipo de imágenes empleadas para diagnosticar dolencias cardiacas. Los autores, un equipo multidisciplinar del Centro Médico Cedars-Sinai de Los Ángeles, realizó un ensayo aleatorizado y ciego (el primero de este tipo con esta tecnología) para evaluar la precisión de la IA analizando 3.495 ecografías empleadas para ver la función del músculo y las válvulas del corazón.
+
+                En el estudio, se pidió a cardiólogos que valoraran la evaluación inicial de los técnicos de ultrasonidos que suelen hacer ese trabajo y de las realizadas por inteligencia artificial. Los médicos hicieron correcciones a la máquina en un 16,8% de los casos frente al 27,2% de los técnicos humanos. Además, los cardiólogos no fueron capaces de distinguir cuáles eran evaluaciones hechas por la IA o por una persona. Según resumen los autores, “para los pacientes que se sometieron a una cuantificación ecocardiográfica de su función cardiaca [...] la evaluación por la IA no fue inferior a la de los ecocardiografistas”.
+                
+                Los responsables del trabajo, liderados por el cardiólogo David Ouyang, no creen que este tipo de tecnología vaya a sustituir el trabajo de los profesionales. “Esperamos que ayude a los especialistas a ahorrar tiempo y minimizar las partes más tediosas del trabajo de diagnóstico por imagen cardiaca”, señala. El cardiólogo, al menos de momento, seguirá teniendo la última palabra.
+                
+                MÁS INFORMACIÓN
+                Dvd1113(29/06/22) Regina Barzilay es una científica informática israelí-estadounidense. Es profesora en el Instituto de Tecnología de Massachusetts y líder de la facultad de inteligencia artificial en la Clínica MIT Jameel , Madrid Foto: Víctor Sainz
+                Regina Barzilay: “Tenemos que aprender a vivir en un mundo en el que la tecnología toma decisiones que no podemos supervisar”
+                En Cedars-Sinai también están aplicando la IA a otros aspectos de la prevención cardiaca. Un equipo liderado por Sumeet Chugh ha comenzado un estudio observacional con alrededor de 400.000 personas en busca de un modo más preciso de evaluar el riesgo de fibrilación ventricular, un tipo de arritmia que puede provocar muerte súbita. La acumulación de grandes cantidades de información para entrenar a la IA permitiría, según los responsables de este proyecto, prever con mayor precisión quién debería someterse a una intervención porque su riesgo de fallo cardiaco es elevado. Otros usos de la IA puestos a prueba por esta misma institución permiten mejorar la calidad de imágenes obtenidas por escáneres de menor calidad hasta igualar las de otros obtenidos por aparatos de mayor calidad.
+                
+                Amparo Martínez, presidenta de la Asociación de Imagen Cardiaca de la Sociedad Española de Cardiología (SEC) y cardióloga del Hospital Clínico Universitario de Santiago, explica que, ahora, en las estaciones de trabajo de última generación, “ya hay programas semiautomáticos que sirven para analizar diferentes medidas de un ecocardiograma. Es algo que permite ahorrar tiempo, pero sigue siendo necesaria la valoración de un experto”, añade. Este tipo de tecnología, asegura, “está ayudando mucho y va a ayudar más, puede servir para agilizar el trabajo, porque es más rápido que si realizas tú la medida, pero siempre va a ser necesaria la labor del médico”, concluye.
+                
+                Ouyang cree que su tecnología puede ayudar a hacer más asequible el tratamiento médico, pero sus palabras, al menos en el caso de los técnicos que evalúan las ecografías, no descarta que la IA pueda sustituir el trabajo humano. “Los cardiólogos aún lo examinarían y se asegurarían que está bien hecho. Dicho esto, en nuestro ensayo, los cardiólogos no fueron capaces de distinguir entre el trabajo hecho por los técnicos y la IA y vieron que la evaluación preliminar de la IA era mejor y requirió menos cambios”, resume.
+
+                Igual que con tecnologías como ChatGPT, la posibilidad de dejar algo tan sensible como el diagnóstico médico en manos de sistemas cuyo funcionamiento a veces no se comprende del todo ha generado recelos. Sin embargo, expertos como Regina Barzilai, que ha desarrollado algoritmos con los que mejorar el diagnóstico del cáncer, consideran que el peligro está en no aprovechar el potencial de una tecnología que puede mejorar la precisión del diagnóstico médico y abaratarlo. “Hay un énfasis excesivo en los riesgos de esta tecnología, pero si observas los sistemas sanitarios de todo el mundo, no suelen incluirla. Solo está en algunos hospitales donde se hace investigación. Es como hablar de los peligros que tiene una casa en Marte cuando nadie está construyendo casas en Marte”, opinaba en una entrevista con EL PAÍS. “El peligro de la inteligencia artificial”, concluía, “está en retrasar su aplicación a la medicina, porque hay mucha gente que sufre por el cuidado insuficiente, por los errores médicos o los elevados costes de la sanidad”
+              </p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card-notice mb-3" id="noticia-completa">
+            <img src="img/ia3.avif" class="card-img-top" alt="...">
+            <div class="card-body" id="noti3">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text-notice">El martes pasado el Supremo anuló la condena a un hombre que estafó 5.000 euros a las máquinas expendedoras del Metro de Madrid. El hombre en cuestión introducía unas piezas metálicas similares a monedas, anulaba la transacción a la mitad, y la máquina le devolvía monedas de curso legal. El tribunal mantuvo la condena por estafa que ya le había impuesto la Audiencia de Madrid, pero le absolvió de falsificación de moneda pues, para el organismo, para que se dé una falsificación la réplica debe “engañar a una persona media” y no a una máquina. Los pocos supervivientes del (inminente, según muchos medios) apocalipsis impulsado por la inteligencia artificial encontrarán en algún momento del futuro esta noticia y se reirán de la condescendencia con la que el ordenamiento jurídico trataba a las máquinas en nuestra era.
+
+                Bromas aparte, el mundo está paralizado entre los hallazgos en tiempo real que cada día nos muestra la inteligencia artificial y el catastrofismo. Se comprende en parte porque lo que ha pillado a todo el mundo en fuera de juego es la rapidez. Si hace menos de un año podías pedir a la IA un dibujo y era capaz de mandarte unas manchas texturizadas en naranja sobre un fondo estrellado, ahora, pocos meses después, es capaz de generar en un parpadeo imágenes hiperrealistas del Papa luciendo un anorak fashion o de Donal Trump siendo detenido a la fuerza. Imágenes que engañan a nuestro ojo, que es incapaz de advertirnos de que aquello no es real y que de repente podemos hacer, desde nuestro móvil, con DALL-E2 o Midjourney. Salvando las distancias, es como si en enero de 2022 IBM sacara su primer ordenador, y a finales de año todos tuviéramos un iPhone 13 en la mano. Esa velocidad, lógicamente, asusta. Y la percepción general puede virar, en el mejor de los casos, hacia la suspicacia tecnológica y, en el peor, a la desconfianza informativa generalizada.
+                
+                La tecnología puede usarse para bien, para mal y, también, y esto suele olvidarse, para hacer el bobo. Las imágenes que se han creado durante estos días se han convertido rápidamente en memes, no en fake news. Algún listo llegó, a principios de marzo, a preguntarle a una IA cómo se vería la serie de The Last of Us si fuera un videojuego. El resultado no estaba mal si, claro, obviamos que la serie ya está basada en un videojuego. Es lo de siempre: tener una tecnología no implica necesariamente saber qué hacer con ella, aunque la suspicacia ha ido in crescendo. La ONU ha advertido sobre los peligros que conlleva el uso de la IA y ha pedido a las empresas responsabilidad. Políticos de toda índole han lanzado mensajes de alerta y varios expertos (Elon Musk, Steve Wozniak, Yuval N. Harari… así hasta mil) han pedido una moratoria de seis meses para poder estudiar las implicaciones de esta nueva tecnología. De nuevo, la rapidez y el vértigo: estas noticias, de ciencia ficción hace un año, se han sucedido en menos de dos meses. Habrá que ver si esos remilgos son tan completamente desinteresados como se anuncian. No olvidemos que Open AI, la creadora de Chat GPT-4, también se define conmovedoramente como una “compañía sin fines de lucro para beneficiar a la humanidad en su conjunto”.
+                
+                La inteligencia artificial pertenecía hace nada al saco de las cosas que no sabías y de repente sabes, un saco, lo decíamos hace poco, al que en su día también pertenecieron las series, las redes sociales, las criptomonedas, los influencers. Todos estos temas —narrativa estirada, comunicación en vivo, economía digital, jugadores en directo…— tuvieron algo en común: antes de asaltar el mundo se cocieron en el ecosistema de los videojuegos que, como tantas veces, hizo de canario en la mina. De hecho, el término, “inteligencia artificial”, es un concepto al que los gamers llevan usando día a día desde hace casi dos décadas, y que hacía referencia a los rivales controlados por la máquina a los que nos enfrentábamos, ya fuera en un tiroteo, en un partido de fútbol o contra el jefe final de juego de plataformas.
+                
+                Podemos decir que Skynet está a la vuelta de la esquina, pero (memes aparte) hasta hoy la inteligencia artificial es una herramienta que ha propiciado avances en el reto climático, en matemáticas o en la medicina de precisión. Hay, claro, que fiscalizar los avances en este tipo de tecnología y tener muy presente los cambios que podría introducir en el mundo, pero de la fiscalización a decir que hay que bombardear los centros de datos que no den marcha atrás en la carrera por lograr una IA superinteligente que acabe con la humanidad (como pidió en la revista Time el doctor experto en inteligencia artificial Eliezer Yudkowsky), quizá media un gran trecho. El que no es tan grande es el trecho que separa la acusación de querer “lograr una IA superinteligente que acabe con la humanidad” de la acusación de tener armas de destrucción masiva, o cualquier otra excusa que endosar al enemigo de turno. Es decir, convendría preguntarse si, como dicen los catastrofistas, está en juego el futuro o tan solo el control del futuro.
+                
+                Hay que tratar los puntos oscuros de la IA, como los debates éticos que puede causar o el problema del consumo que puede requerir. Pero hay que hacerlo desde el rigor, no desde la ciencia ficción. En los últimos tiempos hemos visto cómo se desinflaban tan rápido como llegaron conceptos anunciados a bombo y platillo como los NFT o el metaverso (¿donde ha quedado el metaverso?). Conviene recordar que el cupo de noticias de ciencia ficción de nuestra era ya lo cubrimos hace tres años y que, como el virus nos enseñó, las revoluciones muy anunciadas no suelen ser tan revolucionarias como lo que pueda pasar de repente un martes cualquiera por la tarde. “IA” suena a rebuzno. Esperemos que no sea una referencia velada a nuestro comportamiento cuando nos hablan de ella.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card-notice mb-3" id="noticia-completa">
+            
+            <img src="img/ia4.avif" class="card-img-top" alt="...">
+            <div class="card-body" id="noti4">
+              <h5 class="card-title">ChatGPT es una máquina estúpida, tenemos que reprogramarla</h5>
+              <p class="card-text-notice">Al margen de que la lógica de ChatGPT es heredera de los tiempos de la Guerra Fría (la comparación de patrones, diseñada para predecir y reaccionar en los entornos de guerra), al igual que ocurre con el buscador o el sistema GPS de Google u otras tecnologías como el iPhone, la obsesión por clasificaciones de las ideas aparentemente racionales ilustra un suceso paradójico: la irracionalidad detrás de la forma en que entendemos la técnica.
+
+                De un lado, porque trata de solucionar los problemas que el mundo digital “anterior” había creado, lo cual termina creando más problemas. Es lo que Evgeny Morozov ha denominado solucionismo: dado que esta inteligencia artificial ha sido entrenada con miles de millones de páginas e información procedente de Internet, lo que hasta hace poco coincidíamos que era un océano de noticias falsas, muchas de las respuestas que entrega son poco atinadas. Si bien tiene capacidades para generar texto, esta herramienta representa algo así como una forma de institucionalizar la desinformación, aunque ahora con plugins y sofisticados prompts.
+                
+                ¿Pero, alguien cree que esta será la técnica que los libros de historia recuerden como la biblioteca del siglo XXI del mismo modo en que lo fueron, por ejemplo, instituciones culturales semejantes creadas en El Escorial por Felipe II? El problema es que ChatGPT trata de resolver cuestiones sobre nuestra sociedad que deberíamos afrontar de otra forma. Por ejemplo, en lo relacionado a la educación, ¿el problema es que una máquina sea capaz de crear disertaciones de manera automática o que los sistemas públicos de educación (que han sufrido los recortes primero, y la googelización después) sigan siendo incapaces de gozar de innovadoras infraestructuras digitales propias?
+                
+                La problemática no es que los estudiantes tengan más herramientas para copiar, sino que la educación no disponga de un modelo de enseñanza y aprendizaje que dé primacía a la adquisición de capacidades analíticas y sintéticas sobre el dominio de la información. Como expresaba el filósofo Roberto Mangabeira Unger, la pregunta es cómo crear herramientas que ayuden a las personas a alcanzar cierta profundidad selectiva en detrimento de la superficialidad enciclopédica en el tratamiento de los contenidos, o que priorice el trabajo colaborativo (entre alumnos, profesores y centros) en lugar del individualismo y el autoritarismo en las aulas. Para abordar cada tema desde puntos de vista contrastados, veraces, necesitamos inteligencias artificiales muy distintas a ChatGPT: máquinas entrenadas con otros conjuntos de datos, diseñadas para aprender o descubrir autores y piezas de conocimiento nuevas, no para automatizar un modelo de enseñanza anticuado.
+                
+                Algo similar ocurre con otros campos. En el libro “Trabajos de mierda”, el antropólogo estadounidense David Graber desplegaba una teoría donde afirma que la existencia de trabajos sin propósito alguno tiene efectos corrosivos para la sociedad y se vuelve psicológicamente destructivo. Entonces, ¿por qué creamos inteligencias artificiales que tratan de solucionar este problema mediante la automatización de dichos trabajos, en lugar de crear máquinas para reducir la carga laboral, distribuir las plusvalías derivadas mediante alguna forma de renta básica universal, como ha propuesto Francesca Bria, y permitir que la creatividad humana se exprese libremente?
+                
+                Argumentaba Evgeny Morozov que ChatGPT no es inteligente ni artificial: extrae su fuerza del trabajo de humanos, sean estos artistas, músicos, programadores o escritores de cuya producción creativa y profesional se apropia en nombre de la salvación de la civilización. Dada esta realidad, cómo reprogramamos la inteligencia artificial para visibilizar la inteligencia humana, capaz de crear arte, ficciones culturales o nuevas historias, en lugar de gastar enormes cantidades de dinero y recursos energéticos en centros de datos y modelos de aprendizaje automático. ¿No sería más inteligente repensar la biblioteca digital del siglo XXI siguiendo criterios de sostenibilidad, crear herramientas para modelar futuros que nos gustaría vivir, con conocimiento sobre experiencias que han tenido éxito en el pasado, en lugar de algo así como automatizar el calentamiento global mientras elevamos dudas a un bot?</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          
+    </div>
+        
+    <!--Pie De Pagina-->
+    <section id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>UCB</h1>
+            </div>
+            
+            <div class="col">
+                <h3>Grupo</h3>
+                <a href="#">Jose C.</a>
+                <a href="#">Cosset G.</a>
+                <a href="#">Edely J.</a>
+                <a href="#">Vania P.</a>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="media">
+                    <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Contacto</h3>
+                <input type="text" placeholder="Tu correo">
+                <input type="submit" class="enviar">
+            </div>
+        </div>
+
+    </section>
+</body>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="scriptIA.js"></script>
+</html>

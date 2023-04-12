@@ -12,7 +12,6 @@ html{
 /* SECCION I N I C I O */
 /* ***************** */
 #inicio{
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -25,8 +24,9 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px;
+    padding: 10px 20px;
     position: relative;
+    background-color: #21618C;
 
 }
 #inicio header .contenido-header nav{
@@ -39,7 +39,7 @@ html{
     list-style: none;
 }
 #inicio header .contenido-header .logo{
-    color: #21618C;
+    color: #eaeef1;
     font-size: 22px;
 }
 #inicio header .contenido-header nav ul li{
@@ -47,7 +47,7 @@ html{
 }
 #inicio header .contenido-header nav ul li i{
     display: block;
-    color: #a8a8a8;
+    color: #fff;
     margin-bottom: 10px;
 }
 #inicio header .contenido-header nav ul li a{
@@ -57,7 +57,7 @@ html{
     margin: 0px 20px;
 }
 #inicio header .contenido-header nav ul li:hover i{
-    color: #21618C;
+    color: #85c3ec;
 }
 #inicio header .contenido-header .social a{
     display: inline-block;
@@ -77,150 +77,49 @@ html{
    font-size: 25px;
    color: #a8a8a8;
 }
-/* Carrusel */
-#inicio .carrusel{
-    position: relative;
-    height: 100%;
-}
-#inicio .carrusel .info{
-    position: absolute;
-    
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 50%;
-    text-align: center;
-    color:#fff;
-}
-#inicio .carrusel .info h2{
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-family: 'Dancing Script';
-}
-#inicio .carrusel .info button{
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 20px;
-    border:none;
-    background-color: #21618C;
-    color: #fff;
-    padding: 7px 25px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-#inicio .gallery {
-    width: 100%;
-    height: 100%;
-}
-  
-#inicio .gallery-cell {
-    width: 100%;
-    margin-right: 10px;
-    height: 100%;
-}
-#inicio .gallery-cell img{
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
 
 
 /* ***************** */
-/* SECCION S A B O R E S */
+/* CARD */
 /* ***************** */
-#sabores{
-    padding: 50px 0;
-}
-#sabores h2{
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-}
-#sabores .fila{
-    display: flex;
-    max-width: 1100px;
-    margin: auto;
-}
-#sabores .fila .item img{
-    max-width: 80px;
-}
-#sabores .fila .item{
-    display: flex;
-    align-items:center;
-    margin: 20px 10px;
-    padding: 5px;
-}
-#sabores .fila .item:hover{
-    background-color: #21618C;
-}
-#sabores .fila .item .info{
-    margin-left: 15px;
-    font-size: 14px;
-}
-#sabores button{
-    display: block;
-    width: fit-content;
-    margin: auto;
-    margin-top: 20px;
-    font-size: 20px;
-    border:none;
-    background-color: #21618C;
-    color: #fff;
-    padding: 7px 25px;
-    border-radius: 30px;
-    cursor: pointer;
-}
 
-/* ***************** */
-/* SECCION P L A T O S */
-/* ***************** */
-#platos h2{
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-#platos .fila{
-    max-width: 1100px;
-    margin:auto;
+.ListCard{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10px;
 }
-#platos .fila .item{
-    width: 33%;
-    position:relative;
+.card-img-top{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.card-notice{
+    width: 100%;
+    margin: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
     overflow: hidden;
 }
-#platos .fila .item img{
-    width: 100%;
-    display: block;
-}
-#platos .fila .item p{
-    position:absolute;
-    width: 100%;
-    bottom: -100%;
+.notice{
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px;
-    background-color:#21618C;
-    color: #fff;
-    transition: .5s;
+    font-size: 12px;
+    text-align: center;
 }
-#platos .fila .item:hover p{
-    bottom: 0;
+
+.card-text-notice{
+    padding: 30px;
+    font-size: 12px;
+    text-align: center;
 }
-#platos button{
-    display: block;
-    width: fit-content;
-    margin: auto;
-    margin-top: 20px;
-    font-size: 20px;
-    border:none;
-    background-color: #21618C;
-    color: #fff;
-    padding: 7px 25px;
-    border-radius: 30px;
-    cursor: pointer;
-}
+
 
 
 /* ***************** */
@@ -364,13 +263,6 @@ html{
         height: 100vh;
         background-color: #252A2E;
         z-index: 99;
-    }
-    nav.responsive ul{
-        display: block !important;
-    }
-    nav.responsive ul li{
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
     }
 
     #contacto .fila{
