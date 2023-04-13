@@ -99,13 +99,26 @@ html{
 }
 
 .card-notice{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
     width: 100%;
-    margin: 10px;
-    border: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    overflow: hidden;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    
 }
+.card-body{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+    width: 80%;
+}
+
 .notice{
     background-color: #ffffff;
     color: #000000;
