@@ -3,10 +3,10 @@
 # Integrantes
 
 
-  Edely Mireya Tito Loredo DESARROLÓ index.html
+  Edely Mireya Tito Loredo desarrolló index.html
   
-  Cosette Adriana Guevara Rivera DESARROLLÓ gest_tecnolo.html
+  Cosette Adriana Guevara Rivera desarrolló gest_tecnolo.html
   
-  Jose Amadeo Condori Ramos DESARROLLÓ IA.html
+  Jose Amadeo Condori Ramos desarrolló IA.html
   
-  Vania Pamala Patzi Quispe DESARROLLÓ TECNOEMERG.html
+  Vania Pamala Patzi Quispe desarrolló TECNOEMERG.html
