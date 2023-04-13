@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="estilosGes.css">
+
+
+</head>
+
+<body>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>Revista UCB</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tecnoEmerg.html" onclick="seleccionar()">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <span>Desarrollo Web</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="IA.html" onclick="seleccionar()">
+                                <i class="fa-solid fa-code-branch"></i>
+                                <span>Inteligencia Artificial</span>
+                            </a></li>
+                        <li>
+                            <a href="gest_tecnolo.html" onclick="seleccionar()">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Gestión Tecnologica</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="tel:+1123-456-7890">
+                        <i class="fa-solid fa-phone"></i>+1123-456-7890
+                    </a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+
+    </section>
+
+    <!-- SECCION Introduccion -->
+    <section id="introduccion">
+        <div class="izq">
+            <h1>Tendencias de<br>Gestión tecnológica</h1>
+            <p>La pandemia fue un antes y un después en la forma de gestionar las empresas y la tecnología y marco las
+                tendencias empresariales y las novedades en los negocios para esta década. La digitalización fue
+                obligada, pero dejamos pendiente la transformación digital de nuestras organizaciones. Además cambió la
+                velocidad del cambio, más de lo que la Ley de Moore predecía. Así que si no quieres quedarte atrás,
+                descubre cuáles serán las tendencias empresariales para 2023.</p>
+            <div class="boton">
+                <a target="_blank" id="enlace"
+                    href="https://www.iebschool.com/blog/tendencias-empresariales-innovacion-innovacion/">LEARN MORE</a>
+            </div>
+
+        </div>
+        <div class="der"></div>
+    </section>
+
+
+
+
+
+
+    <!-- SECCION BLOG -->
+    <section id="blog">
+        <h2>Noticias destacadas</h2>
+        <div class="galeria-blog js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": true}'>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/GesIA.JPG" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>La Inteligencia Artificial</h3>
+                        <p>Es una de las tendencias tecnológicas actuales en constante evolución que tiene el potencial
+                            de transformar el negocio, brindando soluciones en múltiples industrias, desde salud,
+                            seguridad y educación hasta logística y tecnología de la información.</p>
+                        <a href="#sabores">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/Gesblock.JPG" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Blockchain</h3>
+                        <p>Esta tecnología se está estableciendo como una solución viable para muchos
+                            desafíos tecnológicos. Es muy conocida por dar soporte a las criptomonedas como Bitcoin; sin
+                            embargo, tiene muchas otras aplicaciones potenciales. Es probable que la veamos en otras
+                            áreas como la gestión de la cadena de suministro.</p>
+                        <a href="#bloco">Leer Más</a>
+                        <p class="invisible">p</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/GesIndus.JPG" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Industria 4.0, IoT, RPA y Robótica Inteligente</h3>
+                        <p>Los robots lo copan todo, ya no queremos humanos trabajando porque los robots son más
+                            eficaces y no se quejan. Y si no son robots son programas robotizados que realizan rutinas
+                            de trabajo con software que automatizan tareas del día a día el «Robot Process
+                            Automatization» o Automatización de Procesos Robóticos.</p>
+                        <a href="#indus">Leer Más</a>
+                        <p class="invisible">p</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION SABORES -->
+    <section id="sabores">
+        <h2>Inteligencias Artificiales</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Inteligencia Artificial cada vez más fiable</h3>
+                    <p>La inteligencia artificial es un conjunto de numerosas tecnologías capaces de ofrecer soluciones
+                        a problemas cada vez más complejos. Algunas de las tecnologías con gran influencia en el
+                        desarrollo de la inteligencia formativa en 2023, serán el diseño asistido por IA, el desarrollo
+                        aumentado de IA, ontologías y gráficos, «small data», IA compuesta, IA generativa, entre otros.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor2.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>El uso de la IA se está convirtiendo rápidamente en parte de nuestra vida cotidiana.</h3>
+                    <p>Las tecnologías de inteligencia artificial (IA) permiten a los ordenadores procesar la
+                        información como podría hacerlo un empleado, al tiempo que mejoran la eficiencia general y
+                        evitan los errores humanos.
+
+                        Las tecnologías de IA desempeñan un papel cada vez más importante en la racionalización de los
+                        procesos de trabajo, el enriquecimiento de la experiencia del cliente y la mejora de la
+                        colaboración entre empleados.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor3.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Inteligencia Artificial (IA), el año de su madurez en los negocios:</h3>
+                    <p>La inteligencia artificial se aplicará a una amplia gama de información, incluyendo vídeo,
+                        imágenes, voz, actividad de tráfico de red y datos de sensores. Se estima que al menos 25.000
+                        millones de cosas estarán conectadas para el 2021. Se espera para el próximo año se que las
+                        tecnologías de IA crezcan exponencialmente y se incluyan en casi todos los productos y servicios
+                        tecnológicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bloco">
+        <h2>Blockchain</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>BlockChain, más que bloques</h3>
+                    <p>La cadena de bloques, más conocida por el término en inglés Blockchain, es un registro único,
+                        consensuado y distribuido en varios nodos de una red. En el caso de las criptomonedas, podemos
+                        pensarlo como el libro contable donde se registra cada una de las transacciones. Las empresas
+                        hoy en día obtienen una mayor seguridad y monetización de su negocio gracias a esta estructura
+                        de datos.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor2.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Descentralización de la mano del blockchain</h3>
+                    <p>Es la base de la web 3.0. Permite la desintermediación y facilita la interoperabilidad de forma
+                        transparente. Además, también permite la creación de aplicaciones descentralizadas Dapps, DAOS y
+                        las finanzas descentralizadas DeFi y los metaversos descentralizados como Decentraland.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="indus">
+        <h2>Industria 4.0</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Automatización de procesos Robóticos</h3>
+                    <p>Las soluciones RPA (Robotic Process Automation) han sido las grandes desconocidas de la
+                        automatización empresarial. Su enfoque propone una aproximación diferente para la automatización
+                        de procesos porque ya no pretende cambiarlos, sino automatizarlos. No pretende abordar todos los
+                        procesos, solo uno. Es un enfoque que, a lo largo del año, permitirá que se obtengan resultados
+                        de valor y no solo monetarios.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor2.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Smart Companies</h3>
+                    <p>Durante 2023 veremos la explosión de la automatización combinada con la robótica, la conducción
+                        remota, los vehículos autónomos y solares y todo administrado con inteligencia artificial y
+                        nutrido de datos, muchos datos. Esto confluye en la creación de Hospitales Inteligentes,
+                        Universidades Inteligentes, Factorías inteligentes o Granjas inteligentes y totalmente
+                        automatizadas. Algo que dicho sea de paso ya existe desde el siglo XX en la explotación láctea,
+                        si ir mas lejos.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor3.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Chatbots</h3>
+                    <p>Debido al crecimiento del aprendizaje automático, los chatbots se han vuelto extremadamente
+                        populares en las pequeñas y grandes empresas. Normalmente, los chatbots se utilizan en el
+                        servicio al cliente. Son un conjunto de respuestas inmediatas en chats o páginas web que ayudan
+                        a resolver dudas. Son simulaciones de conversaciones teniendo agentes conversacionales más
+                        receptivos, más inteligentes y más humanos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor2.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Ciberseguridad</h3>
+                    <p>La ciberseguridad sigue siendo una tendencia tecnológica en este 2023. A medida que las empresas
+                        avanzan en la digitalización y abordan la transformación digital, sus sistemas son más valiosos
+                        y por tanto deben protegerse anta la exposición de los ciberataques.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Asistentes digitales con voz</h3>
+                    <p>A lo largo de este año, muchas personas han tenido la necesidad de sentirse acompañadas. Por este
+                        motivo, durante los próximos años, la sensación de querer estar acompañados se verá como algo
+                        imprescindible. Llegarán a nosotros los asistentes digitales. Podremos verlos por todas partes.
+                        Lo más probable es que los fabricantes logren desarrollar interfaces de usuario de voz con
+                        capacidades avanzadas de reconocimiento y transferencia de emociones. Además de acompañar a las
+                        personas, las empresas podrán utilizarlas para aumentar la satisfacción del cliente.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor3.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Smart Companies</h3>
+                    <p>Durante 2023 veremos la explosión de la automatización combinada con la robótica, la conducción
+                        remota, los vehículos autónomos y solares y todo administrado con inteligencia artificial y
+                        nutrido de datos, muchos datos. Esto confluye en la creación de Hospitales Inteligentes,
+                        Universidades Inteligentes, Factorías inteligentes o Granjas inteligentes y totalmente
+                        automatizadas. Algo que dicho sea de paso ya existe desde el siglo XX en la explotación láctea,
+                        si ir mas lejos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SECCION CONTACTO Y PIE DE PAGINA -->
+    <section id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>UCB</h1>
+            </div>
+
+            <div class="col">
+                <h3>Grupo</h3>
+                <a href="#">Jose C.</a>
+                <a href="#">Cosette G.</a>
+                <a href="#">Edely J.</a>
+                <a href="#">Vania P.</a>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="media">
+                    <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Contacto</h3>
+                <input type="text" placeholder="Tu correo">
+                <input type="submit" class="enviar">
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+    <script src="scriptGes.js"></script>
+</body>
+
+</html>
