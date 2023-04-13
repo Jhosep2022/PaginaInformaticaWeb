@@ -1,11 +1,8 @@
 const menu = document.querySelector('.hamburguesa');
 const navegacion = document.querySelector('.navegacion');
-const imagenes = document.querySelectorAll('img');
-const btnTodos = document.querySelector('.todos');
 
 document.addEventListener('DOMContentLoaded', () => {
     eventos();
-    platillos();
 });    
 
 const eventos = () => {
