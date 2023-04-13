@@ -9,4 +9,4 @@
   
   Jose Amadeo Condori Ramos desarrolló IA.html
   
-  Vania Pamela Patzi Quispe desarrolló TECNOEMERG.html
+  Vania Pamela Patzi Quispe desarrolló tecnoEmerg.html
