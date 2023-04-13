@@ -1,6 +1,9 @@
 # PaginaInformaticaWeb
 
 # Integrantes
+
+# Proyecto Informativo
+
   Edely Mireya Tito Loredo
   
   Cosette Adriana Guevara Rivera
