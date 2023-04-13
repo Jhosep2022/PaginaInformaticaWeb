@@ -1,10 +1,12 @@
 # PaginaInformaticaWeb
 
 # Integrantes
-  Edely Mireya Tito Loredo
+
+
+  Edely Mireya Tito Loredo DESARROLO INDEX.HTML
   
-  Cosette Adriana Guevara Rivera
+  Cosette Adriana Guevara Rivera DESARROLLO DESARROLLO.HTML
   
-  Jose Amadeo Condori Ramos
+  Jose Amadeo Condori Ramos DESARROLLO IA.HTML
   
-  Vania Pamala Patzi Quispe
+  Vania Pamala Patzi Quispe DESARROLLO TECNOEMERG.HTML

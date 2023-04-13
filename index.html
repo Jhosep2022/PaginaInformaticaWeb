@@ -5,63 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UCB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="styleindex.css">
+    
 
-
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <!-- SECCION INICIO -->
     <section id="inicio">
         <header>
-            <div class="contenido-header">
-                <div class="logo">
-                    <h1>Revista UCB</h1>
-                </div>
-                <nav id="nav">
-                    <ul>
-                        <li>
-                            <a href="#inicio" onclick="seleccionar()">
-                                <i class="fa-solid fa-house"></i>
-                                <span>Inicio</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#sabores" onclick="seleccionar()">
-                                <i class="fa-solid fa-laptop-code"></i>
-                                <span>Desarrollo Web</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="IA.html" onclick="seleccionar()">
-                                <i class="fa-solid fa-code-branch"></i>
-                                <span>Inteligencia Artificial</span>
-                            </a></li>
-                        <li>
-                            <a href="gest_tecnolo.html" onclick="seleccionar()">
-                                <i class="fa-solid fa-pen"></i>
-                                <span>Gestión Tecnologica</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contacto" onclick="seleccionar()">
-                                <i class="fa-solid fa-comments"></i>
-                                <span>Contacto</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="social">
-                    <a href="tel:+1123-456-7890">
-                        <i class="fa-solid fa-phone"></i>+1123-456-7890
-                    </a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a> 
-                </div>
-                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
-                    <i class="fa-solid fa-bars"></i>
+            <div class="contenedor-navegacion">
+                <div class="contenido-navegacion contenedor">
+                    <div class="logo">
+                        <h2>Revista Tecnologica UCB </h2>
+                    </div>
+                    <nav class="navegacion ocultar">
+                        <a href="#inicio">Inicio</a>
+                        <a href="">Desarrollo WEB</a>
+                        <a href="IA.html">Inteligencia Artificial</a>
+                        <a href="gest_tecnolo.html">Gestion Tecnologica</a>
+                        <a href="#contacto">Contactos</a>
+                    </nav>
+                    <div class="hamburguesa">
+                        <span></span><span></span><span></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -83,93 +62,41 @@
             </div>
             <div class="info">
                 <h2>La revista tecnológica UCB </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <button>Leer Más</button>
             </div>
         </div>
 
     </section>
-
-    <!-- SECCION SABORES -->
-    <section id="sabores">
-        <h2>Noticias Destacadas</h2>
-        <div class="fila">
-            <div class="item">
-                <div class="icono">
-                    <img src="img/sabor1.png" alt="">
-                </div>
-                <div class="info">
-                    <h3>Noticia 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="icono">
-                    <img src="img/sabor2.png" alt="">
-                </div>
-                <div class="info">
-                    <h3>Noticia 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="icono">
-                    <img src="img/sabor3.png" alt="">
-                </div>
-                <div class="info">
-                    <h3>Noticia 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </div>
-
-        
-
-        <button>Ver Más</button>
-
-    </section>
-
     
 
     <!-- SECCION BLOG -->
     <section id="blog">
-        <h2>Tecnológia</h2>
+        <h2>Noticias Destacadas</h2>
         <div class="galeria-blog js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": true}'>
+
             <div class="gallery-cell" >
                 <div class="item">
                     <div class="foto">
-                        <img src="img/t1.jpg" alt="">
+                        <img src="img/ia3.avif" width="50" height="50">
                     </div>
                     <div class="info">
-                        <h3>Lo mejor del mes</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam alias asperiores.</p>
+                        <h3>IA suena a rebuzno</h3>
+                        <p>Es comprensible que la velocidad de la tecnología asuste, y que se pida su fiscalización. Incluso que se exagere con ella.</p>
                     </div>
                 </div>
             </div>
             <div class="gallery-cell" >
                 <div class="item">
                     <div class="foto">
-                        <img src="img/t2.jpg" alt="">
+                        <img src="img/ia1.avif" width="50" height="50">
                     </div>
                     <div class="info">
-                        <h3>Nuevas herramientas</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam alias asperiores culpa minus corporis neque hic sunt dolore.</p>
+                        <h3>Asi perdio un trabajo de locutor por una IA</h3>
+                        <p>Alejandro Graue es un actor de doblaje a quien sustituyeron en uno de sus proyectos por una voz hecha por ordenador. El problema no es ese, dice, sino la tendencia que viene.</p>
                     </div>
                 </div>
             </div>
-            <div class="gallery-cell" >
-                <div class="item">
-                    <div class="foto">
-                        <img src="img/t3.jpg" alt="">
-                    </div>
-                    <div class="info">
-                        <h3>La tecnologia del 2023</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam alias asperiores culpa.</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
-        <button>Leer Más</button>
     </section>
 
     <!-- SECCION CONTACTO Y PIE DE PAGINA -->
@@ -181,10 +108,10 @@
             
             <div class="col">
                 <h3>Grupo</h3>
-                <a href="#">Jose C.</a>
-                <a href="#">Cosette G.</a>
-                <a href="#">Edely J.</a>
-                <a href="#">Vania P.</a>
+                <p>Jose Condori</p>
+                <p>Cosette Guevara</p>
+                <p>Edely Tito</p>
+                <p>Vania Patzi</p>
             </div>
             <div class="col">
                 <h3>Social Media</h3>
@@ -205,6 +132,7 @@
     </section>
     
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="script.js"></script>
+    <script src="scriptindex.js"></script>
+    
 </body>
 </html>
